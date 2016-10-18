@@ -1,0 +1,32 @@
+{
+  "name": "mockirer",
+  "version": "1.0.0",
+  "description": "Mock the answers of inquirer prompt questions",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ceasbz/mockirer.git"
+  },
+  "keywords": [
+    "mock",
+    "inquirer",
+    "prompt",
+    "mock",
+    "answers",
+    "mock",
+    "inquirer",
+    "mockirer"
+  ],
+  "author": "Cauê Alves <ceasbz2@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ceasbz/mockirer/issues"
+  },
+  "homepage": "https://github.com/ceasbz/mockirer#readme",
+  "dependencies": {
+    "inquirer": "1.2.2"
+  }
+}
