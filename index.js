@@ -1,10 +1,14 @@
 'use strict';
 
-module.exports = (answers, inquirer) => {
+module.exports = (inquirer, answers) => {
 	const answersTypeOf = typeof answers
 	
 	if (answersTypeOf !== 'object') {
 		throw new TypeError(`The answers should be a object, ${answersTypeOf} given.`)
+	}
+
+	if (typeof inquirer === 'undefined') {
+		throw new TypeError(`Must pass inquirer as dependency injection.`)
 	}
 
 	inquirer.prompt = prompts => {

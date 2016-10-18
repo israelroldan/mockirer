@@ -7,16 +7,22 @@
 	const mockirer = require('./');
 
 	assert.throws(() => {
-		mockirer(true, inquirer)
+		mockirer(inquirer, true)
 	}, TypeError, 'The answers should be a object, boolean given.');
 	
 	assert.throws(() => {
-		mockirer(undefined, inquirer)
-	}, TypeError, 'The answers should be a object, undefined given');
+		mockirer(inquirer, undefined)
+	}, TypeError, 'The answers should be a object, undefined given.');
 
 	assert.throws(() => {
-		mockirer(123, inquirer)
-	}, TypeError, 'The answers should be a object, integer given');
+		mockirer(inquirer, 123)
+	}, TypeError, 'The answers should be a object, integer given.');
+
+	assert.throws(() => {
+		mockirer(undefined, {
+			name: 'Test'
+		})
+	}, TypeError, 'Must pass inquirer as dependency injection.');
 }
 
 // should be possible to mock answer
@@ -24,9 +30,9 @@
 	const inquirer = require('inquirer');
 	const mockirer = require('./');
 
-	mockirer({
+	mockirer(inquirer, {
 		name: 'Cauê'
-	}, inquirer);
+	});
 
 	inquirer.prompt([
 		{

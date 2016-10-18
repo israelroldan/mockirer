@@ -12,8 +12,8 @@ npm install mockirer --save-dev
 const mockirer = require('mockirer');
 const inquirer = require('inquirer');
 
-mockirer({
-	name: 'Cauê'	
+mockirer(inquirer, {
+	name: 'Cauê'
 });
 
 inquirer.prompt([
