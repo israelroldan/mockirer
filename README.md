@@ -4,7 +4,7 @@
 
 ## Install
 ```bash
-npm install mockirer --save
+npm install mockirer --save-dev
 ```
 
 ## Usage
