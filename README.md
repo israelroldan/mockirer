@@ -9,8 +9,8 @@ npm install mockirer --save
 
 ## Usage
 ```js
-import mockirer from 'mockirer';
-import inquirer from 'inquirer';
+const mockirer = require('mockirer');
+const inquirer = require('inquirer');
 
 mockirer({
 	name: 'Cauê'	
