@@ -1,6 +1,6 @@
 'use strict';
 
-// should thrown exception when try to mock with invalid answer
+// should thrown exception when try to mock with invalid parameters
 {
 	const assert = require('assert');
 	const inquirer = require('inquirer');
