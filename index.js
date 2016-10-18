@@ -1,22 +1,13 @@
 'use strict';
 
-module.exports = answers => {
+module.exports = (answers, inquirer) => {
 	const answersTypeOf = typeof answers
 	
 	if (answersTypeOf !== 'object') {
 		throw new TypeError(`The answers should be a object, ${answersTypeOf} given.`)
 	}
 
-	let _inquirer
-
-	if (typeof inquirer !== 'undefined') {
-		_inquirer = inquirer
-	} else {
-		_inquirer = require('inquirer')
-	}
-
-
-	_inquirer.prompt = prompts => {
+	inquirer.prompt = prompts => {
 		[].concat(prompts).forEach(prompt => {
 			const hasAwnserForQuestion = (prompt.name in answers)
 			const hasDefaultAwnser = (typeof prompt.default !== 'undefined')
@@ -26,10 +17,8 @@ module.exports = answers => {
 			}
 		})
 
-		return {
-			then: callback => {
-				callback(answers)
-			}
-		}
+		return new Promise((resolve, reject) => {
+			resolve(answers)
+		})
 	}
 }

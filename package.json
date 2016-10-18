@@ -1,6 +1,6 @@
 {
   "name": "mockirer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Mock the answers of inquirer prompt questions",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
     "url": "https://github.com/ceasbz/mockirer/issues"
   },
   "homepage": "https://github.com/ceasbz/mockirer#readme",
-  "dependencies": {
-    "inquirer": "1.2.2"
+  "devDependencies": {
+    "inquirer": "^1.2.2"
   }
 }

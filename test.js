@@ -3,18 +3,19 @@
 // should thrown exception when try to mock with invalid answer
 {
 	const assert = require('assert');
+	const inquirer = require('inquirer');
 	const mockirer = require('./');
 
 	assert.throws(() => {
-		mockirer(true)
+		mockirer(true, inquirer)
 	}, TypeError, 'The answers should be a object, boolean given.');
 	
 	assert.throws(() => {
-		mockirer()
+		mockirer(undefined, inquirer)
 	}, TypeError, 'The answers should be a object, undefined given');
 
 	assert.throws(() => {
-		mockirer(123)
+		mockirer(123, inquirer)
 	}, TypeError, 'The answers should be a object, integer given');
 }
 
@@ -25,7 +26,7 @@
 
 	mockirer({
 		name: 'Cauê'
-	});
+	}, inquirer);
 
 	inquirer.prompt([
 		{
