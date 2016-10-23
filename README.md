@@ -1,4 +1,4 @@
-# mockirer [![Build Status](https://travis-ci.org/ceasbz/mockirer.svg?branch=master)](https://travis-ci.org/ceasbz/mockirer) [![Dependency Status](https://david-dm.org/ceasbz/mockirer.svg?style=flat-square)](https://david-dm.org/ceasbz/mockirer) [![Npm Package Version](https://img.shields.io/npm/v/mockirer.svg?style=flat-square)](https://www.npmjs.org/package/mockirer)
+# mockirer [![Build Status](https://travis-ci.org/ceasbz/mockirer.svg?branch=master)](https://travis-ci.org/ceasbz/mockirer) [![Dependency Status](https://david-dm.org/ceasbz/mockirer.svg?style=flat-square)](https://david-dm.org/ceasbz/mockirer) [![Npm Package Version](https://img.shields.io/npm/v/mockirer.svg?style=flat-square)](https://www.npmjs.org/package/mockirer) [![Coverage Status](https://coveralls.io/repos/github/ceasbz/mockirer/badge.svg?branch=master)](https://coveralls.io/github/ceasbz/mockirer?branch=master)
 
 > Mock the answers of [inquirer](https://github.com/SBoudrias/Inquirer.js) prompt questions.
 
